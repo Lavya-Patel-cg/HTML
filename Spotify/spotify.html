@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spotify</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #121212;
+            color: white;
+            font-family: Arial;
+        }
+
+        
+
+        .main {
+            display: flex;
+        }
+
+        
+
+        .sidebar {
+            width: 150px;
+            height: 85vh;
+            background-color: black;
+            padding: 15px;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+
+        .menu p {
+            padding: 12px;
+            font-size: 14px;
+            gap: 10px;
+            display: flex;
+        }
+
+       
+
+        .content {
+            flex: 1;
+            padding: 25px;
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+
+        .top button {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+       
+
+        .playlists {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .playlist {
+            display: flex;
+            align-items: center;
+            background-color: #303030;
+            width: 30%;
+            height: 60px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .playlist img {
+            width: 60px;
+            height: 60px;
+        }
+
+        .playlist p {
+            padding: 10px;
+            font-size: 13px;
+        }
+
+        
+
+        .shows {
+            display: flex;
+            gap: 15px;
+        }
+
+        .show {
+            background-color: #202020;
+            padding: 10px;
+            width: 16%;
+        }
+
+        .show img {
+            width: 100%;
+            height: 120px;
+            border-radius: 8px;
+        }
+
+        .show p {
+            margin-top: 12px;
+            font-size: 13px;
+        }
+
+        .show small {
+            color: grey;
+        }
+
+       
+
+        .player {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #181818;
+            height: 65px;
+            padding: 0 15px;
+            position: fixed;
+            bottom: 0;
+            width: 98%;
+        }
+
+        .song {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .song img {
+            width: 45px;
+            height: 45px;
+        }
+
+        .controls {
+            text-align: center;
+        }
+
+        .controls p {
+            margin-bottom: 8px;
+        }
+
+        .controls div {
+            background-color: grey;
+            width: 300px;
+            height: 4px;
+        }
+
+        .volume {
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+       
+
+        <div class="sidebar">
+
+            <div class="logo"><img src="Spotify logo.png" alt="" height="40px"></div>
+
+            <div class="menu">
+                <p><img src="Home (1).png" alt="" height="20px"> Home</p>
+                <p><img src="Search (1).png" alt="" height="20px"> Search</p>
+                <p><img src="Your library.png" alt="" height="20px"> Your Library</p>
+                <p><img src="Create (1).png" alt="" height="20px"> Create Playlist</p>
+                <p><img src="Liked (1).png" alt="" height="20px"> Liked Songs</p>
+                <p><img src="your episodes.png" alt="" height="20px"> Your Episodes</p>
+                <br>
+                <p>FAV</p>
+                <p>Daily Mix 1</p>
+                <p>Discover Weekly</p>
+                <p>Malayalam</p>
+                <p>Dance / Electronic Mix</p>
+                <p>EDM / Popular</p>
+            </div>
+            <div class="install"><img src="" alt=""></div>
+
+        </div>
+
+
+      
+
+        <div class="content">
+
+            <div class="top">
+                <h3>Good morning</h3>
+                <button><img src="User.png" alt=""></button>
+            </div>
+
+
+            
+
+            <div class="playlists">
+
+                <div class="playlist">
+                    <img src="Liked (1).png">
+                    <p> Liked Songs</p>
+                </div>
+
+                <div class="playlist">
+                    <img src="image4.png">
+                    <p>Neffex Playlist</p>
+                </div>
+
+                <div class="playlist">
+                    <img src="image5.png">
+                    <p>K/DA</p>
+                </div>
+
+                <div class="playlist">
+                    <img src="image6.png">
+                    <p>Liked Songs</p>
+                </div>
+
+                <div class="playlist">
+                    <img src="image7.png">
+                    <p>Dance / Electronic Mix</p>
+                </div>
+
+            </div>
+
+
+            
+
+            <h3>Shows you might like</h3>
+
+            <br>
+
+            <div class="shows">
+
+                <div class="show">
+                    <img src="image1.png">
+                    <p>Weekly Motivation</p>
+                    <small>Podcast</small>
+                </div>
+
+                <div class="show">
+                    <img src="image2.png">
+                    <p>MEDITATION SELF</p>
+                    <small>Relaxing Music</small>
+                </div>
+
+                <div class="show">
+                    <img src="image3.png">
+                    <p>Words beyond actions</p>
+                    <small>Special Episodes</small>
+                </div>
+
+                <div class="show">
+                    <img src="image8.png">
+                    <p>The Alexa Show</p>
+                    <small>Adhira Tam</small>
+                </div>
+
+                <div class="show">
+                    <img src="image9.png">
+                    <p>The Stories of Music</p>
+                    <small>Music</small>
+                </div>
+
+                <div class="show">
+                    <img src="image10.png">
+                    <p>Motivation Daily</p>
+                    <small>Inspiration</small>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+   
+
+    <div class="player">
+
+        <div class="song">
+            <img src="image11.png" alt="">
+            <div>
+                <p>Dreaming On</p>
+                <small>NEFFEX</small>
+            </div>
+            <p><img src="bx_bxs-heart.png" alt="" height="20px"></p>
+        </div>
+
+
+        <div class="controls">
+            <p><img src="Music Player Options.png" alt="" height="50px"></p>
+           
+        </div>
+
+
+        <div class="volume">
+            ♫ &nbsp; ▬▬▬
+        </div>
+
+    </div>
+
+</body>
+</html>

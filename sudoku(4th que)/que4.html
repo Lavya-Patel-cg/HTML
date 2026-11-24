@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 25px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 370px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    
+    
+    margin-bottom: 25px;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 3px solid black;
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.row {
+    display: flex;
+}
+
+.group {
+    display: flex;
+    flex: 1;
+    border-right: 3px solid black;
+}
+
+.group:last-child {
+    border-right: none;
+}
+
+.group div {
+    flex: 1;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.green-group div {
+    background-color: #a8d5b8;
+}
+</style>
+</head>
+<body>
+    
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main">
+
+    <!-- SUDOKU PUZZLE -->
+    <div class="box">
+        <h2>SUDOKU</h2>
+
+        <div class="grid">
+
+            <!-- Section 1 -->
+            <div class="section">
+                <div class="row">
+                    <div class="group">
+                        <div>8</div><div></div><div>6</div>
+                    </div>
+                    <div class="group green-group">
+                        <div></div><div></div><div>3</div>
+                    </div>
+                    <div class="group">
+                        <div></div><div>9</div><div></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="group">
+                        <div></div><div>4</div><div></div>
+                    </div>
+                    <div class="group green-group">
+                        <div></div><div>1</div><div></div>
+                    </div>
+                    <div class="group">
+                        <div></div><div>6</div><div>8</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="group">
+                        <div>2</div><div></div><div></div>
+                    </div>
+                    <div class="group green-group">
+                        <div>8</div><div>7</div><div></div>
+                    </div>
+                    <div class="group">
+                        <div></div><div></div><div>5</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2 -->
+            <div class="section">
+                <div class="row">
+                    <div class="group green-group">
+                        <div>1</div><div></div><div>8</div>
+                    </div>
+                    <div class="group">
+                        <div></div><div></div><div>5</div>
+                    </div>
+                    <div class="group green-group">
+                        <div></div><div>2</div><div></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="group green-group">
+                        <div></div><div>3</div><div></div>
+                    </div>
+                    <div class="group">
+                        <div>1</div><div></div><div></div>
+                    </div>
+                    <div class="group green-group">
+                        <div></div><div>5</div><div></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="group green-group">
+                        <div>7</div><div></div><div>5</div>
+                    </div>
+                    <div class="group">
+                        <div></div><div>3</div><div></div>
+                    </div>
+                    <div class="group green-group">
+                        <div>9</div><div></div><div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3 -->
+            <div class="section">
+                <div class="row">
+                    <div class="group">
+                        <div></div><div>2</div><div>1</div>
+                    </div>
+                    <div class="group green-group">
+                        <div></div><div></div><div>7</div>
+                    </div>
+                    <div class="group">
+                        <div></div><div>4</div><div></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="group">
+                        <div>6</div><div></div><div></div>
+                    </div>
+                    <div class="group green-group">
+                        <div></div><div>2</div><div></div>
+                    </div>
+                    <div class="group">
+                        <div>8</div><div></div><div></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="group">
+                        <div></div><div>8</div><div>7</div>
+                    </div>
+                    <div class="group green-group">
+                        <div>6</div><div></div><div>4</div>
+                    </div>
+                    <div class="group">
+                        <div></div><div></div><div>3</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ANSWER -->
+    <div class="box">
+        <h2>ANSWER</h2>
+
+        <div class="grid">
+
+            <!-- Section 1 -->
+            <div class="section">
+                <div class="row">
+                    <div class="group">
+                        <div>8</div><div>7</div><div>6</div>
+                    </div>
+                    <div class="group green-group">
+                        <div>5</div><div>4</div><div>3</div>
+                    </div>
+                    <div class="group">
+                        <div>1</div><div>9</div><div>2</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="group">
+                        <div>5</div><div>4</div><div>3</div>
+                    </div>
+                    <div class="group green-group">
+                        <div>2</div><div>1</div><div>9</div>
+                    </div>
+                    <div class="group">
+                        <div>7</div><div>6</div><div>8</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="group">
+                        <div>2</div><div>1</div><div>9</div>
+                    </div>
+                    <div class="group green-group">
+                        <div>8</div><div>7</div><div>6</div>
+                    </div>
+                    <div class="group">
+                        <div>4</div><div>3</div><div>5</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2 -->
+            <div class="section">
+                <div class="row">
+                    <div class="group green-group">
+                        <div>1</div><div>9</div><div>8</div>
+                    </div>
+                    <div class="group">
+                        <div>7</div><div>6</div><div>5</div>
+                    </div>
+                    <div class="group green-group">
+                        <div>3</div><div>2</div><div>4</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="group green-group">
+                        <div>4</div><div>3</div><div>2</div>
+                    </div>
+                    <div class="group">
+                        <div>1</div><div>9</div><div>8</div>
+                    </div>
+                    <div class="group green-group">
+                        <div>6</div><div>5</div><div>7</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="group green-group">
+                        <div>7</div><div>6</div><div>5</div>
+                    </div>
+                    <div class="group">
+                        <div>4</div><div>3</div><div>2</div>
+                    </div>
+                    <div class="group green-group">
+                        <div>9</div><div>8</div><div>1</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3 -->
+            <div class="section">
+                <div class="row">
+                    <div class="group">
+                        <div>3</div><div>2</div><div>1</div>
+                    </div>
+                    <div class="group green-group">
+                        <div>9</div><div>8</div><div>7</div>
+                    </div>
+                    <div class="group">
+                        <div>5</div><div>4</div><div>6</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="group">
+                        <div>6</div><div>5</div><div>4</div>
+                    </div>
+                    <div class="group green-group">
+                        <div>3</div><div>2</div><div>1</div>
+                    </div>
+                    <div class="group">
+                        <div>8</div><div>7</div><div>9</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="group">
+                        <div>9</div><div>8</div><div>7</div>
+                    </div>
+                    <div class="group green-group">
+                        <div>6</div><div>5</div><div>4</div>
+                    </div>
+                    <div class="group">
+                        <div>2</div><div>1</div><div>3</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+</body>
+</html>
